@@ -14,7 +14,7 @@
 
 # gitlab_rails['gitlab_ssh_host'] = 'ssh.host_example.com'
 # gitlab_rails['time_zone'] = 'UTC'
-# gitlab_rails['gitlab_email_enabled'] = true
+gitlab_rails['gitlab_email_enabled'] = false
 # gitlab_rails['gitlab_email_from'] = 'example@example.com'
 # gitlab_rails['gitlab_email_display_name'] = 'Example'
 # gitlab_rails['gitlab_email_reply_to'] = 'noreply@example.com'
