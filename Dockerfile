@@ -6,7 +6,7 @@ COPY Gemfile /opt/gitlab/embedded/service/gitlab-rails/
 WORKDIR /opt/gitlab/embedded/service/gitlab-rails/
 
 RUN bundle config build.nokogiri --use-system-libraries --with-xml2-include=/usr/include/libxml2
-RUN bundle install --without development test mysql
+RUN bundle update && bundle install --without development test mysql
 
 COPY gitlab.rb /etc/gitlab/
 WORKDIR /
